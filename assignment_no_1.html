@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Assignment</a>
+        </div>
+    </nav>
+
+    <div class="banner">
+        
+        <img src="https://images.unsplash.com/photo-1500622944204-b135684e99fd?q=80&w=1461&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid">
+        <div class="banner-text">
+            <h1>Welcome to My Website</h1>
+            <p>Explore the amazing content we have for you.</p>
+        </div>
+    </div>
+
+    <div class="services-section">
+        <h2>Checking your Age</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+    </div>
+
+    <div class="card-container">
+        <div class="card" style="width: 18rem;">
+            <img src="https://cdn.pixabay.com/photo/2023/12/12/13/28/waterfall-8445292_1280.jpg" class="card-img-top" alt="Card Image 1">
+            <div class="card-body">
+                <h5 class="card-title">Card 1</h5>
+                <p class="card-text" id="card1Text">Age status will show here.</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://cdn.pixabay.com/photo/2023/10/28/23/36/dahlias-8348462_1280.jpg" class="card-img-top" alt="Card Image 2">
+            <div class="card-body">
+                <h5 class="card-title">Card 2</h5>
+                <p class="card-text" id="card2Text">And here</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://cdn.pixabay.com/photo/2023/09/14/16/17/wave-8253292_1280.jpg" class="card-img-top" alt="Card Image 3">
+            <div class="card-body">
+                <h5 class="card-title">Card 3</h5>
+                <p class="card-text" id="card3Text">Yeah, also here </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="input-container">
+        <label class="input-label" for="cardNumber">Enter Your Age:</label>
+        <input class="input-field" type="number" id="cardNumber" oninput="updateCardText()">
+    </div>
+
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+            </a>
+        </div>
+        </section>
+
+        <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Age is Nothing
+                </h6>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                Products
+                </h6>
+                <p>
+                <a href="#!" class="text-reset">Lorem</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Lorem</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Lorem</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Lorem</a>
+                </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+                </h6>
+                <p>
+                <a href="#!" class="text-reset">Lorem</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Lorem</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Lorem</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Lorem</a>
+                </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Lorem</h6>
+                <p><i class="fas fa-home me-3"></i> Dhaka, Bangladesh</p>
+                <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> + 012 3456789</p>
+                <p><i class="fas fa-print me-3"></i> + 012 3456789</p>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="#">No One</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function updateCardText() {
+            var age = document.getElementById("cardNumber").value;
+
+            var card1TextElement = document.getElementById("card1Text");
+            var card2TextElement = document.getElementById("card2Text");
+            var card3TextElement = document.getElementById("card3Text");
+
+            if (age >= 18) {
+                card1TextElement.textContent = "You are an adult.";
+                card2TextElement.textContent = "I said you are an Adult";
+                card3TextElement.textContent = "Bruh, You are an adult";
+            } else if (age < 18) {
+                card1TextElement.textContent = "You are a kid.";
+                card2TextElement.textContent = "I said you are a Baby.";
+                card3TextElement.textContent = "Kiddo 😄";
+            } else {
+                card1TextElement.textContent = "WTHYI";
+                card2TextElement.textContent = "WTFYI";
+                card3TextElement.textContent = "Why!";
+            }
+        }
+    </script>
+</body>
+</html>
